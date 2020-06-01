@@ -7,3 +7,5 @@
 /build/classes/java/test/
 #oauth
 application-oauth.properties
+#.DS_Store
+.DS_Store
