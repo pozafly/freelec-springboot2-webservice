@@ -9,7 +9,6 @@ import java.util.Map;
 
 @Getter
 public class OAuthAttributes {
-
     private Map<String, Object> attributes;
     private String nameAttributeKey;
     private String name;
@@ -29,6 +28,7 @@ public class OAuthAttributes {
         if("naver".equals(registrationId)) {
             return ofNaver("id", attributes);
         }
+
         return ofGoogle(userNameAttributeName, attributes);
     }
 
@@ -62,5 +62,4 @@ public class OAuthAttributes {
                 .role(Role.GUEST)
                 .build();
     }
-
 }
