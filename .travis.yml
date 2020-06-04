@@ -23,7 +23,7 @@ deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY   # Travis repo seetings 에 설정된 값
     secret_access_key: $AWS_SECRET_KEY   # Travis repo seetings 에 설정된 값
-    bucket: pozafly-freelec-springboot2-webserivce  # S3 버킷
+    bucket: pozafly-freelec-springboot2-build  # S3 버킷
     region: ap-northeast-2
     skip_cleanup: true
     acl: private   # zip 파일 접근은 private 으로.
